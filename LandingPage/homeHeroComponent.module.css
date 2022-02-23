@@ -1,0 +1,59 @@
+.homeHeroComponent {
+    max-width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    /* gap: 20px; */
+    /* justify-content: space-between; */
+}
+
+.pepperFryCarousel {
+    width: 68%;
+    height: auto;
+    margin-left: 4%;
+    
+}
+
+
+.offerColumn {
+    width:22%;
+    margin-left:0.5%;
+    
+}
+
+.imgLink {
+    width: 100%;
+    height: 94%;
+    
+}
+
+.bankBanner {
+    width: 90%;
+    margin: auto;
+    
+}
+
+.bankBannerImg {
+    width: 99%;
+    
+}
+
+.bannerText {
+    text-align: right;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.06em;
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.textColor {
+    color: #F16521;
+}
