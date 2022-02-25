@@ -1,0 +1,43 @@
+
+#left1{
+    border: 2px solid orangered;
+    border-right: none;
+    height: 520px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+#pic{
+    width: 100%;
+    height: 100%;
+}
+#right1{
+    border: 2px solid orangered;
+    border-left: none;
+    height: 520px;
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+}
+#buttn{
+    background-color: orangered;
+    color: white;
+    padding: 16px 10px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+ }
+.FT{
+    border-bottom: 3px solid lightgray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 13px;
+    margin-left: 10px;
+    width: 70%;
+    color: grey;
+}
+#TnC{
+    font-size: 13px;
+    color: black;
+}
