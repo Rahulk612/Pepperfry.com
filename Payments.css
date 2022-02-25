@@ -1,0 +1,105 @@
+.container {
+  width: 800px;
+  border-left: 5px solid #1c7ed6;
+  height: 600px;
+  margin: 50px auto;
+  box-shadow: 1px 1px 10px 1px #dee2e6;
+  /* border: 2px solid red; */
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.left {
+  padding: 40px 32px;
+  width: 250px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  width: 140px;
+}
+
+.top {
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right {
+  /* border: 2px solid red; */
+  margin-left: 20px;
+}
+
+.card {
+  font-size: 16px;
+  border: 1px solid #adb5bd;
+  padding: 8px 130px 8px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.details {
+  padding: 7px 20px 7px 10px;
+  width: 120px;
+  border: 1px solid #adb5bd;
+}
+
+.expiry-and-cvv {
+  display: flex;
+  gap: 32px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.expiry {
+  display: block;
+  margin-bottom: 12px;
+}
+
+form {
+  background-color: #f8f9fa;
+  padding: 32px 40px;
+  border-left: 5px solid #1c7ed6;
+  margin-top: 32px;
+}
+
+.check-box {
+  width: 16px;
+  height: 20px;
+}
+.payment-message {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.payment-message p {
+  color: #868e96;
+  font-size: 10px;
+}
+
+.enter-card {
+  margin-top: 64px;
+}
+
+.right-head {
+  margin-top: 50px;
+  margin-left: 40px;
+  color: #868e96;
+}
+
+.button {
+  padding: 14px 133px;
+  margin-top: 16px;
+  background-color: #1c7ed6;
+  border: none;
+  color: #adb5bd;
+  border-radius: 4px;
+}
