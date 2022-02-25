@@ -1,0 +1,20 @@
+.success{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+img{
+    width: 100px;
+}
+ #btn{
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+ p {
+    color: black;
+   
+}
