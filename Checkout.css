@@ -1,0 +1,95 @@
+#main{
+   
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#details{
+    border: 1px solid lightgray;
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+#cart{
+    border: 1px solid lightgray;
+    width: 25%;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+#head{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F5F5F5;
+    font-size: 18px;
+}
+#h1{
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+    
+    margin-right: 70px;
+}
+#h2{
+    width: 40%;
+    display: inline-block;
+    text-align: right;
+    
+    color: gray;
+}
+.input{
+    text-align: left;
+    margin-left: 40px;
+}
+.text{
+    margin-left: 110px;
+    border: 1px solid lightgray;
+    width: 60%;
+    height: 45px;
+    border-radius: 8px;
+}
+.text2{
+    margin-left: 40px;
+}
+.text3{
+    margin-left: 95px;
+}
+.text4{
+    margin-left: 95px;
+    height: 90px;
+}
+.text5{
+    margin-left: 155px;
+    border: 1px solid lightgray;
+    width: 29%;
+    height: 45px;
+    border-radius: 8px;
+}
+.text6{
+    margin-left: 13px;
+    border: 1px solid lightgray;
+    width: 29%;
+    height: 45px;
+    border-radius: 8px;
+}
+.text7{
+    margin-left: 155px;
+    border: 1px solid lightgray;
+    width: 61%;
+    height: 45px;
+    border-radius: 8px;
+}
+.btn{
+    margin-left: 155px;
+    background-color: orangered;
+    width: 30%;
+    height: 45px;
+    color: white;
+    border: none;
+    font-size: large;
+    margin-bottom: 30px;
+}
