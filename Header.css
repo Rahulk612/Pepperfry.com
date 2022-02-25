@@ -185,3 +185,218 @@
     text-decoration: none;
 }
  
+
+
+
+
+
+
+
+
+/* .logina{
+    display: inline-block;
+    margin-left: 10%;
+}
+.login{
+    margin-top: 20px;
+    margin-left: 20%;
+    width: 19%;
+    color: rgb(253, 253, 253);
+    background-color: red;
+    padding: 10px;
+    border-radius: 40%;
+    font-weight: bold;
+ 
+}
+
+
+.Signup{
+  padding: 5px;
+    margin-left: 10%;
+    width: 21%;
+    color: black;
+    background-color: rgb(232, 228, 228);
+    border-radius: 40%;
+    padding: 10px;
+    font-weight: bold;
+
+} */
+
+
+/* 
+.ls{
+    margin-left:90%;
+    display: inline-block;
+} */
+
+
+
+
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 18%;
+    right: 26%;
+    /* border: 3px solid #c5c3c3; */
+    z-index: 1;
+   
+  }
+  .form-container {
+    width: 700px;
+    height: 520px;
+    /* padding-top: 30px; */
+    /* border: 2px solid red; */
+    background-color: white;
+    
+  }
+  #left{
+      /* border: 1px solid green; */
+      height: 100%;
+      width: 45%;
+      display: inline-block;
+      vertical-align: top;
+  }
+  #right{
+      height: 100%;
+      width: 55%;
+      display: inline-block;
+      /* border: 1px solid green; */
+      vertical-align: top;
+  }
+ #cross{
+   
+     height: 50px;
+     width: 50px;
+     float: right;
+ }
+ #btn{
+    background-color: orangered;
+    color: white;
+    padding: 16px 10px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+ }
+.FT{
+    border-bottom: 3px solid lightgray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 13px;
+    margin-left: 10px;
+    width: 70%;
+    color: grey;
+}
+#TnC{
+    font-size: 13px;
+    color: black;
+}
+#btn2{
+    color: orangered;
+    opacity: 0.8;
+    padding: 16px 10px;
+    border: 2px solid lightgray;
+    cursor: pointer;
+    width: 80%;
+    background-color: white;
+    margin-top: 20px;
+}
+.hide {
+    display: none;
+  }
+  .myDIV:hover + .hide {
+    display: block;
+    color: red;
+    border: 2px solid yellow;
+    height: 500px;
+    width: 500px;
+  }
+
+
+  /* Full-width input fields */
+  /* .form-container input[type=text], .form-container input[type=password] {
+    width: 70%;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 5px 0 22px 15%;
+    border: none;
+    color: black;
+    background: #f1f1f1;
+  } */
+  
+  /* When the inputs get focus, do something */
+  /* .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  } */
+  
+  /* Set a style for the submit/login button */
+  /* .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 10px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:5px;
+    opacity: 0.8;
+    margin-left: 23%;
+    border-radius: 5%;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+  } */
+  
+  /* Add a red background color to the cancel button */
+  /* .form-container .cancel {
+    background-color: red;
+ 
+  } */
+  
+  /* Add some hover effects to buttons */
+  /* .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  }
+
+  .logoimg1{
+      margin-left: 45%;
+      width: 30px;
+      padding-top: 20px;
+  }
+
+  .headingsignup{
+      margin-left: 20%;
+      font-size: 30px;
+      font-weight: bold;
+  }
+
+  .headingsignup1{
+    margin-left: 37%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.headinglogin1{
+  margin-left: 25%;
+  font-size: 30px;
+  font-weight: bold;
+}
+.loginc{
+  
+  font-size: 16px;
+  margin-left: 80px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.loginc1{
+  font-size: 16px;
+  margin-left: 80px;
+  font-weight: bold;
+}
+.hr{
+  margin-top: 30px;
+} */
