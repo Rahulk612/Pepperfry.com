@@ -1,10 +1,11 @@
 
 .main-one{
-    margin: auto 5%;
+    margin: 20px 5%;
 }
 .one{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 1%;
 }
 .img1{
     width: 330px;
@@ -29,14 +30,16 @@
 }
 .two{
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3% 33.3% 33.3% 33.3%;
+    grid-template-columns: 32.5% 32.5% 32.5% 32.5% 32.5% 32.5%;
+    gap: 1%;
 }
 .two::-webkit-scrollbar{
     width: 1;
 }
 .two3{
     display:grid;
-    grid-template-columns: 53% 53%;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
 }
 .two-space{
     padding-top: 5px;
@@ -120,8 +123,9 @@
 .seven{
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 49%;
     padding: auto;
+    gap: 1%;
     margin-left: 5px;
 }
 .img7{
@@ -156,7 +160,7 @@
 .bottom-left-1{
     position: absolute;
     color: black;
-    bottom: 90px;
+    bottom: 10px;
     text-align: left;
     left: 230px;
 }
@@ -170,7 +174,7 @@
 .bottom-left-2{
     position: absolute;
     color: black;
-    bottom: 70px;
+    bottom: 10px;
     text-align: left;
     left: 430px;
 }
@@ -184,7 +188,7 @@
 .bottom-left-3{
     position: absolute;
     color: black;
-    bottom: 70px;
+    bottom: 10px;
     text-align: left;
     left: 630px;
 }

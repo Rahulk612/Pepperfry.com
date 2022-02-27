@@ -5,6 +5,8 @@
  import { Footer } from "./Footer"
  
  export const Home = () => {
+   const item = JSON.parse(localStorage.getItem("buyNowItem"));
+   console.log(item)
     return (
      <div>
         <Header/>

@@ -1,0 +1,228 @@
+.headerCart{
+    height: 85px;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerLogo img{
+    /* padding-left: 50px; */
+    height: 25px;
+    width: auto;
+}
+
+.statusCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    gap: 10px;
+}
+
+
+.headerName{
+    margin-top: 1%;
+}
+
+.headerCartIcon{
+    color:tomato;
+}
+
+.headerCart hr {
+    background-color: rgb(206, 201, 201);
+    height: 0.001px;
+    border: 0.01px solid rgb(206, 201, 201);
+    color: rgb(206, 201, 201);
+}
+
+.cartItems{
+    padding: 0px 40px;
+}
+
+.inYourCart h1{
+    font-size: 20px;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    margin-top: 20px;
+    gap:10px;
+}
+
+
+.cartContainerDiv{
+    margin-top: 30px;
+    display: flex;
+    gap: 2%;
+
+}
+
+
+.itemsCartContainer{
+    /* border: 1px solid lightgray; */
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+.itemCartPrice{
+    /* border: 1px solid lightgray; */
+    width: 33%;
+    /* height: 200px; */
+}
+
+
+.itemCartPriceInner{
+    height: 200px;
+    border: 1px solid lightgray;
+}
+/* .ItemCartCardDiv{
+    border-top: 1px solid lightgray;
+} */
+/* ItemCartCardDiv */
+.ItemCartCardDiv img{
+    padding: 30px 10px;
+    height: 180px;
+    width: 150px;
+}
+
+
+.itemCartMainCont{
+    display: flex;
+    gap: 10px;
+    border: 1px solid lightgray;
+}
+
+.ItemCartCardTitle{
+    width: 270px;
+
+}
+
+.ItemcartCardGenuine{
+    margin-top: 10px;
+}
+
+.ItemCartCardDisc{
+    width: 300px;
+    padding: 30px 5px;
+}
+
+.ItemcartCardDelivery{
+    padding: 5px 10px;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+
+.incAndDecCart{
+   padding: 35px 5px;
+}
+
+
+.ForCartPriceDec{
+    margin-top: 20px;
+}
+
+.ForCartPriceAtual{
+    color: tomato;
+    font-size: 17px;
+}
+
+
+.cartItemDeleteandWish{
+    height: 50px;
+    padding: 50px 30px;
+    display: flex;
+    gap: 15px;
+   align-items: center;
+    
+}
+
+.DeleteIconCart{
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.heartCart{
+    font-size: 20px;
+}
+
+
+.itemCartValueDiv{
+    padding: 0px 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.itemCartValueDiv p {
+font-size: 13px;
+}
+
+.itemRetailsDiscDiv{
+    padding: 2px 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.itemRetailsDiscDiv p {
+    font-size: 13px;
+    color: #67ad5b;
+}
+
+.itemDeleveryDiv{
+    padding: 2px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.itemDeleveryDiv p {
+    font-size: 13px;
+}
+
+
+.itemCartTotalDiv{
+    padding: 10px 10px;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.itemCartTotalDiv p {
+    color: black;
+    font-weight: 500;
+}
+
+.hr{
+    /* border: 2px solid red; */
+    /* padding: 5px 10px; */
+    margin: 5px 10px;
+    border-top: 2px solid lightgray;
+}
+
+
+.checkBoxItem{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+
+.itemPlcaeOrder{
+    margin-top: 30px;
+    height: 50px;
+    border: 1px solid tomato;
+    background-color: tomato;
+    display: flex;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}

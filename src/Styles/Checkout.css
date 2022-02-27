@@ -1,22 +1,21 @@
 #main{
-   
     width: 100%;
     height: auto;
+    padding: 0px 35px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 #details{
     border: 1px solid lightgray;
-    width: 50%;
+    width: 65%;
     height: auto;
     display: inline-block;
     vertical-align: top;
     margin-right: 20px;
 }
 #cart{
-    border: 1px solid lightgray;
-    width: 25%;
-    height: 200px;
+    /* border: 1px solid lightgray; */
+    width: 33%;
     display: inline-block;
     vertical-align: top;
 }

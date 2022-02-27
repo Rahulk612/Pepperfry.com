@@ -1,0 +1,158 @@
+.currentStore{
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+.productsContainer > div{
+    padding: 0px 70px;
+}
+.currentStore > p{
+    font-size: 14px;
+    padding: 2px;
+    color: gray;
+}
+
+.currentStore > p:last-child{
+    color: black;
+}
+
+.sortNames{
+    color: dimgray;
+    font-size: 16px;
+}
+
+.productsDiv{
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+    display: flex;
+}
+
+.heroName{
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+.heroSortName{
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.stack{
+    gap: 10px;
+}
+
+.sortDiv{
+    width: 270px;
+    border-right: 1px solid lightgray;
+}
+
+.checkBoxDiv{
+    margin-top: 30px;
+    border-top: 1px solid lightgray;
+}
+
+.contentDiv > h3,.contentDiv >  p{
+    margin-top: 1.5%;
+}
+
+.productsGridMain{
+    display: grid;
+    width: 70%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    grid-template-columns: repeat(3,34%);
+    row-gap: 25px;
+    column-gap: 15px;
+}
+
+.cardDiv{
+    border: 1px solid red;
+    height: 500px;
+}
+.DivDiv:hover .ButtonButton{
+    display:initial;
+}
+
+
+.DivDiv:hover .RatingStart{
+    margin-top:-8.7%;
+
+}
+
+
+.DivDiv{
+    /* font-family: Manrope,sans-serif;
+     */
+    height: 500px;
+    cursor: pointer;
+}
+
+.contentDiv{
+    margin-top: 5%;
+}
+
+.itemTitle{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.itemBrand,.lineThrough{
+    color: gray;
+    font-weight: 400;
+}
+
+.itemPrice{
+    color: var(--first-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.itemOffer{
+    color: #67ad5b;
+    font-weight: 600;
+}
+
+.cashbackShips{
+    font-size: 300;
+    font-size: 13px;
+}
+
+.cashbackBold{
+    font-weight: 600;
+}
+
+.WishHeart{
+    font-size: 25px;
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+}
+
+
+
+
+.RatingStart{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  line-height: 1;
+  display: flex;
+  font-size: 15px;
+ -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-weight: 700;
+  gap: 5px;
+  margin-top: 83%;
+  margin-left: 73%;
+}
+
+.ratingIcon{
+    color: orange;
+}

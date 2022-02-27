@@ -1,0 +1,217 @@
+.indContainer{
+    border-top: 1px solid lightgray;
+    
+}
+
+.indContainer > div{
+    margin-left:70px;
+    margin-right:70px;
+    display: flex;
+    gap: 2%;
+}
+
+/* .forLeftRigh{
+    padding: 0px 30px;
+    height: 300px;
+    border: 1px solid red;
+} */
+
+.forIndImg{
+    width: 45%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.forIndInfo{
+    width: 52%;
+}
+
+.IndheroImg{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.IndheroImg > img {
+    height: 100%;
+    
+}
+
+.forSideHeroDiv{
+    display: flex;
+    height: 22%;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sideHeroIMg{
+    height: 100%;
+    width: 25%;
+}
+
+.sideHeroIMg > img{
+    height: 100%;
+    width: 100%;
+}
+
+.indTitle{
+    margin-top: 15px;
+    display: flex;
+
+}
+
+
+.indHeadTitle{
+    width: 70%;
+}
+
+.indHeadIcons{
+    width: 30%;
+    
+}
+
+.heartSvg{
+    font-size: 30px;
+}
+
+.shareImg{
+    height: 30px;
+}
+
+.h1{
+    font-size:20px;
+    font-weight: 400;
+}
+
+.indBrand{
+    color: #ff7035;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.indRating{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+}
+
+.indRatingStar{
+    font-size: 20px;
+    color: orange;
+}
+
+.blankStar{
+    color: lightgray;
+}
+
+
+.indWarh3{
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.indPriceh1{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+.indItemOffer{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+
+.indOfferh3{
+    font-size: 18px;
+    font-weight: 500;
+    color: #67ad5b;
+}
+/* .ratingandWar{
+    border: 1px solid red;
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+} */
+
+
+.indEmidiv{
+    margin-top: 10px;
+    border-top: 1px solid lightgray;
+}
+
+.indCoupone{
+    height: 100px;
+    width: 100%;
+    background: url("https://ii2.pepperfry.com/media/wysiwyg/banners/Promo_Web_VIPCoupon_2X_220222_ex.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.indButtonadnmore{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.indqtyoption{
+    border: 1px solid black;
+    height: 60px;
+    width: 80px;
+    border-radius: 2px;
+}
+
+.indAddToCart{
+    border: 1px solid black;
+    height: 60px;
+    width: 220px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.indBuyNow{
+    border: 1px solid #F28500;
+    height: 60px;
+    width: 220px;
+    border-radius: 2px;
+    background-color: #F28500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.indDimensions{
+    width: 220px;
+    color: black;
+}
+
+.indpara{
+    color: black;
+}
+
+.indParaDiv{
+    margin-top: 10px;
+    font-size: 15px;
+}
