@@ -12,11 +12,9 @@ import { Footer } from "./Footer";
 
 export const SingleProduct = () => {
   const [items,setItems] = useState((JSON.parse(localStorage.getItem("cartItems"))) || {})
-  console.log(items)
   const item = JSON.parse(localStorage.getItem("indProduct"));
   const [option, setOPtion] = useState("1");
   // let item = Settees[0];
-  console.log(item);
 
    useEffect(() => {
      localStorage.setItem("cartItems", JSON.stringify(items));
@@ -136,12 +134,11 @@ export const SingleProduct = () => {
               <div className="indButtonadnmore">
                 <div>
                   <select
-                    id=""
-                    defaultValue={1}
-                    value={option}
+                    id="Select"
                     className="indqtyoption"
+                    name="options"
                   >
-                    <option value="1">Qty 1</option>
+                    <option value="Qty 1">Qty 1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -183,15 +180,15 @@ export const SingleProduct = () => {
                 </div>
                 <div>
                   {/* <Link to="/Cart"> */}
-                    <div
-                      className="indBuyNow"
-                      onClick={() => {
-                        handleCart(item);
-                        window.location.href = "/cart"
-                      }}
-                    >
-                      BUY NOW
-                    </div>
+                  <div
+                    className="indBuyNow"
+                    onClick={() => {
+                      handleCart(item);
+                      window.location.href = "/cart";
+                    }}
+                  >
+                    BUY NOW
+                  </div>
                   {/* </Link> */}
                   <div>
                     <div className="indDimensions">
@@ -233,12 +230,14 @@ const Rating = ({rating}) => {
     for(var i = 0; i<rating; i++){
       dp[i] = 1;
     }
+    let count = 0
     return (
       dp.map((e)=>{
+        count++
         if(e===1){
-          return <BsStarFill className="indRatingStar " />;
+          return <BsStarFill key={count} className="indRatingStar " />;
         }else{
-          return <BsStarFill className="blankStar indRatingStar" />;
+          return <BsStarFill key={count} className="blankStar indRatingStar" />;
         }
       })
     )

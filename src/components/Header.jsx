@@ -40,7 +40,6 @@ export const Header = () => {
 
   const Register = () => {
     if(formData){
-      console.log("going to axios",formData)
       axios
         .post(
           "http://backend-pepperfry.herokuapp.com/pepperfry/registration",
@@ -144,7 +143,6 @@ export const Header = () => {
                     style={{ marginTop: "50px",marginLeft:"40px" }}
                     onSubmit={(e) => {
                       e.preventDefault();
-                      console.log("Submitting", formData);
                       Register();
                     }}
                   >

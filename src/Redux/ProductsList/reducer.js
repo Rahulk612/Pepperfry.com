@@ -19,13 +19,14 @@ const init = {
     main:[],
     data: [],
     cartItems: [],
-    staticCart:[]
+    staticCart:[],
+    brands:[],
 }
 
 export const ProductReducer = (store = init,{type,payload}) => {
     switch (type) {
       case GetData:
-        return { ...store, loading: false, data: payload, main: payload };
+        return { ...store, loading: false, data: payload, main: payload,brands:BrandsFn(payload) };
       case Higher_Price:
         return {
           ...store,
@@ -85,9 +86,27 @@ export const ProductReducer = (store = init,{type,payload}) => {
 }
 
 
+
+const BrandsFn = (payload) => {
+  let brands =[]
+  let count = 1;
+  let check = []
+  for(var i = 0; i<payload.length; i++){
+    if(!check.includes(payload[i].Brand)){
+      check.push(payload[i].Brand)
+      let obj = {
+        brand: payload[i].Brand,
+        id: count++,
+      };
+      brands.push(obj)
+    }else {
+      count++
+    }
+  }
+  return brands
+}
+
 const DeletFromCart = (data,item) => {
-  console.log("del",data)
-  console.log("del",item)
   if(item){
     let arr = data.filter((e)=>{
       if(e!=item){

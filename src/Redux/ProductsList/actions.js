@@ -89,9 +89,8 @@ export const delFromCart = (payload) => {
 
 export const getProducts = (query) => (dispatch) => {
   axios
-    .get(`https://backend-pepperfry.herokuapp.com/Pepperfry/${query}`)
+    .get(`https://backend-pepperfry.herokuapp.com/Pepperfry/${query || "seettes"}`)
     .then(({ data }) => {
-      console.log("axiosGetData", data);
       dispatch(getDataSuccess(data));
     })
     .catch(() => {

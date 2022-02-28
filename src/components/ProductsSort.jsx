@@ -30,16 +30,10 @@ export const ProductsSort = () => {
   const [style, setStyle] = useState("");
   const [material, setMaterial] = useState([]);
   const [discountP, setDiscount] = useState("");
-  
-  const brand = []
-  const { main, loading, cartItems } = useSelector((store) => store.data);
+
+  const { main, loading, cartItems,brands } = useSelector((store) => store.data);
   const dispatch = useDispatch();
-  // For Sidebar Brands
-  main.map((e)=>{
-      if(!brand.includes(e.Brand)){
-       return brand.push(e.Brand)
-      }
-  })
+
   useEffect(() => {
     getProductsData();
   }, []);
@@ -138,15 +132,15 @@ export const ProductsSort = () => {
         >
           <Stack spacing={[1, 5]} direction="column">
             <h2 className="heroSortName">Brand</h2>
-            {brand.map((item) => {
+            {brands.map((item) => {
               return (
                 <Checkbox
-                  key={item._id}
-                  value={item}
+                  key={item.id}
+                  value={item.brand}
                   size="md"
                   borderColor="black"
                 >
-                  <p className="sortNames">{item}</p>
+                  <p className="sortNames" >{item.brand}</p>
                 </Checkbox>
               );
             })}

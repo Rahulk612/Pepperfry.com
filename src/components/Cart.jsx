@@ -38,7 +38,6 @@ export const Cart = () => {
   },[])
 
   useEffect(() => {
-    console.log("shda",cartItems);
     localStorage.setItem("cartItems",JSON.stringify(cartItems));
     setData(cartItems)
   }, [cartItems]);
@@ -50,7 +49,6 @@ export const Cart = () => {
   }
 
   useEffect(()=>{
-    console.log("cartItems", cartItems);
     CartProducts()
   },[cartItems])
 

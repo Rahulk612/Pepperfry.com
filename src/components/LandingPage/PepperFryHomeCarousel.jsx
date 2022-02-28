@@ -46,8 +46,7 @@ export default function PepperFryHomeCarousel() {
     }
   };
   return (
-    
-    <div className= {styles.pepperFryCarousel} >
+    <div className={styles.pepperFryCarousel}>
       <Carousel
         ref={carouselRef}
         itemsToShow={1}
@@ -59,8 +58,8 @@ export default function PepperFryHomeCarousel() {
       >
         {items.map((item, i) => (
           <div key={i}>
-            <div style={{ width:"100%",height:"100%", marginLeft:"10px"}}>
-              <img src={item.source} alt="splash" width="100%" height = '100%'/>
+            <div style={{ width: "100%", height: "100%", marginLeft: "10px" }}>
+              <img src={item.source} alt="splash" width="100%" height="100%" />
             </div>
           </div>
         ))}
@@ -68,9 +67,8 @@ export default function PepperFryHomeCarousel() {
 
       <div style={{ display: "flex", justifyContent: "center" }}>
         {items.map((_, i) => (
-          <div>
+          <div key={i}>
             <Button
-              key={i}
               active={i === activeItemIndex}
               onClick={() => carouselRef.current.goTo(i)}
             />
@@ -78,7 +76,5 @@ export default function PepperFryHomeCarousel() {
         ))}
       </div>
     </div>
-        
-        
   );
 }
