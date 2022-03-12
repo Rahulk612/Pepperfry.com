@@ -13,51 +13,38 @@ export const HomeStatic = () => {
         <div className="main-one">
           <h1 className="one-head">Shop By Room</h1>
           <div className="one">
-            {/* <Link to="/Products/lamps"> */}
-            <div
-              className="one1"
-              onClick={() => {
-                window.location.href = "/products/lamps";
-              }}
-            >
-              <img
-                className="img1"
-                src="https://ii1.pepperfry.com/media/wysiwyg/banners/Homepage_Rooms_Section_Web_1__2x_17022022.jpg"
-                alt=""
-              />
-              <p className="one2">Living Room</p>
-            </div>
-            {/* </Link> */}
-            {/* <Link to="/Products/workfromhome"> */}
-            <div
-              className="one1"
-              onClick={() => {
-                window.location.href = "/products/workfromhome";
-              }}
-            >
-              <img
-                className="img1"
-                src="https://ii2.pepperfry.com/media/wysiwyg/banners/Homepage_Rooms_Section_Web_2__2x_17022022.jpg"
-                alt=""
-              />
-              <p className="one2">Work From Home</p>
-            </div>
-            {/* </Link> */}
-            {/* <Link to="/Products/beds"> */}
-            <div
-              className="one1"
-              onClick={() => {
-                window.location.href = "/products/beds";
-              }}
-            >
-              <img
-                className="img1"
-                src="https://ii3.pepperfry.com/media/wysiwyg/banners/Homepage_Rooms_Section_Web_3__2x_17022022.jpg"
-                alt=""
-              />
-              <p className="one2">Bedroom</p>
-            </div>
-            {/* </Link> */}
+            <Link to="/products/lamps">
+              <div className="one1">
+                <img
+                  className="img1"
+                  src="https://ii1.pepperfry.com/media/wysiwyg/banners/Homepage_Rooms_Section_Web_1__2x_17022022.jpg"
+                  alt=""
+                />
+                <p className="one2">Living Room</p>
+              </div>
+            </Link>
+            <Link to="/products/workfromhome">
+              <div className="one1">
+                <img
+                  className="img1"
+                  src="https://ii2.pepperfry.com/media/wysiwyg/banners/Homepage_Rooms_Section_Web_2__2x_17022022.jpg"
+                  alt=""
+                />
+                <p className="one2">Work From Home</p>
+              </div>
+            </Link>
+            <Link to="/products/beds">
+              <div
+                className="one1"
+              >
+                <img
+                  className="img1"
+                  src="https://ii3.pepperfry.com/media/wysiwyg/banners/Homepage_Rooms_Section_Web_3__2x_17022022.jpg"
+                  alt=""
+                />
+                <p className="one2">Bedroom</p>
+              </div>
+            </Link>
             <div className="one1">
               <img
                 className="img1"

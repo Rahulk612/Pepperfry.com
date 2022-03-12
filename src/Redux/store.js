@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, compose, combineReducers } from "redux";
+import { createStore, applyMiddleware, combineReducers } from "redux";
 
 import {ProductReducer} from "./ProductsList/reducer";
 
@@ -22,13 +22,7 @@ const asyncMiddlewear = (store) => (next) => (action) => {
 
 // export const store = createStore( ProductReducer);
 
-export const store = createStore(
-  rootReducer,
-  compose(
-    applyMiddleware(thunk),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  )
-);
+export const store = createStore(rootReducer,applyMiddleware(thunk));
 
 //  compose(
 //     applyMiddleware(thunk),

@@ -4,10 +4,10 @@ import { ProductsGrid } from "./ProductsGrid";
 import { ProductsSort } from "./ProductsSort";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-import {useState}  from "react"
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+// import {useState}  from "react"
+import { useParams } from "react-router-dom";
 
-export const Products = ({query}) => {
+export const Products = () => {
   const {id} = useParams()
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -35,7 +35,7 @@ export const Products = ({query}) => {
         <div></div>
         <div className="productsDiv">
           <ProductsSort />
-          <ProductsGrid query={query} q={id} />
+          <ProductsGrid q={id} />
         </div>
       </div>
       <Footer />

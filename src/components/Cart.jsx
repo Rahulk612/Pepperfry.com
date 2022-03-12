@@ -1,8 +1,6 @@
-import {Checkbox} from "@chakra-ui/react"
 import { CartHeader } from "./CartHeader";
-import {Settees} from "../add_data"
 import {ItemCartCard} from "./ItemCartCard"
-import { useDispatch, useSelector, shallowEqual } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { CartFooter } from "./CartFooter";
 import "./Cart.css";

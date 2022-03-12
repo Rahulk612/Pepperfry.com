@@ -69,6 +69,17 @@
     column-gap: 15px;
 }
 
+.productsGridLoad{
+    display: grid;
+    width: 70%;
+    /* margin-bottom: 50px; */
+    margin-top: 20px;
+    margin-left: 20px;
+    grid-template-columns: repeat(3,34%);
+    /* row-gap: 10px; */
+    column-gap: 15px;
+}
+
 .cardDiv{
     border: 1px solid red;
     height: 500px;

@@ -1,5 +1,6 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 //import Button from '@mui/material/Button';
 import { Login } from "./Login";
 import { useState, useEffect, useContext } from "react";
@@ -15,6 +16,7 @@ function closeForm() {
 }
 
 export const Header = () => {
+  let navigate = useNavigate()
 
   // const { addUserName } = useContext(ThemeContext);
 
@@ -55,21 +57,18 @@ export const Header = () => {
       <div id="header">
         <div id="head1">
           <Link to="/" id="img11">
-            <img
-              src="https://cdn.freelogovectors.net/wp-content/uploads/2019/02/pepperfry-logo.png"
-              alt=""
-            />
+            <img src="https://i.imgur.com/KQ0SkcM.png" alt="" />
           </Link>
           <div className="img12">
-            <a className="nam" href="/products/seettes">
+            <Link to="/products/seettes" className="nam">
               SHOP
-            </a>
-            <a className="nam" href="/">
+            </Link>
+            <Link to="/" className="nam">
               GET INSPIRED
-            </a>
-            <a className="nam" href="/">
+            </Link>
+            <Link to="/" className="nam">
               PARTNER
-            </a>
+            </Link>
           </div>
           <div id="search">
             <input
@@ -140,7 +139,7 @@ export const Header = () => {
                   </div>
 
                   <form
-                    style={{ marginTop: "50px",marginLeft:"40px" }}
+                    style={{ marginTop: "50px", marginLeft: "40px" }}
                     onSubmit={(e) => {
                       e.preventDefault();
                       Register();
@@ -191,12 +190,12 @@ export const Header = () => {
                     {/* </Link> */}
                     <p style={{ fontSize: "13px", marginTop: "5px" }}>
                       By registering you agree to our{" "}
-                      <a
-                        href="https://www.pepperfry.com/terms-of-use.html"
+                      <Link
+                        to="https://www.pepperfry.com/terms-of-use.html"
                         id="TnC"
                       >
                         Terms & Conditions
-                      </a>
+                      </Link>
                     </p>
                     <Link to="/login">
                       {" "}
@@ -213,41 +212,41 @@ export const Header = () => {
           <div className="wrapper">
             <ul className="nav-links">
               <li id="first">
-                <a href="/products/beds">Furniture</a>
+                <Link to="/products/beds">Furniture</Link>
                 <div className="mega-box">
                   <div className="content">
                     <div className="rowone">
                       <header>Sofas</header>
                       <ul className="mega-links a">
                         <li>
-                          <a href="/">Sofas</a>
+                          <Link to="/">Sofas</Link>
                         </li>
                         <li>
-                          <a href="/">3 Seater sofas</a>
+                          <Link to="/">3 Seater sofas</Link>
                         </li>
                         <li>
-                          <a href="/">2 Seater Sofas</a>
+                          <Link to="/">2 Seater Sofas</Link>
                         </li>
                         <li>
-                          <a href="/">1 seater Sofas</a>
+                          <Link to="/">1 seater Sofas</Link>
                         </li>
                         <li>
-                          <a href="/">Sofa Sets</a>
+                          <Link to="/">Sofa Sets</Link>
                         </li>
                         <li>
-                          <a href="/">Sectional Sofas</a>
+                          <Link to="/">Sectional Sofas</Link>
                         </li>
                         <li>
-                          <a href="/">Recliners </a>
+                          <Link to="/">Recliners </Link>
                         </li>
                         <li>
-                          <a href="/">Chaise Loungers</a>
+                          <Link to="/">Chaise Loungers</Link>
                         </li>
                         <li>
-                          <a href="/">Sofa Cum Beds </a>
+                          <Link to="/">Sofa Cum Beds </Link>
                         </li>
                         <li>
-                          <a href="/">Futons </a>
+                          <Link to="/">Futons </Link>
                         </li>
                       </ul>
                     </div>
@@ -255,28 +254,28 @@ export const Header = () => {
                       <header>Seating</header>
                       <ul className="mega-links c">
                         <li>
-                          <a href="/">Settees</a>
+                          <Link to="/">Settees</Link>
                         </li>
                         <li>
-                          <a href="/">Benches</a>
+                          <Link to="/">Benches</Link>
                         </li>
                         <li>
-                          <a href="/">Ottomans</a>
+                          <Link to="/">Ottomans</Link>
                         </li>
                         <li>
-                          <a href="/">Pouffes</a>
+                          <Link to="/">Pouffes</Link>
                         </li>
                         <li>
-                          <a href="/">Recamiers</a>
+                          <Link to="/">Recamiers</Link>
                         </li>
                         <li>
-                          <a href="/">Foot Stools</a>
+                          <Link to="/">Foot Stools</Link>
                         </li>
                         <li>
-                          <a href="/">Seating Stools </a>
+                          <Link to="/">Seating Stools </Link>
                         </li>
                         <li>
-                          <a href="/">Bean Bags</a>
+                          <Link to="/">Bean Bags</Link>
                         </li>
                       </ul>
                     </div>
@@ -285,28 +284,28 @@ export const Header = () => {
                       <header>Chairs</header>
                       <ul className="mega-links a">
                         <li>
-                          <a href="/">Arm Chairs</a>
+                          <Link to="/">Arm Chairs</Link>
                         </li>
                         <li>
-                          <a href="/">Rocking Chairs</a>
+                          <Link to="/">Rocking Chairs</Link>
                         </li>
                         <li>
-                          <a href="/">Cantilever Chairs</a>
+                          <Link to="/">Cantilever Chairs</Link>
                         </li>
                         <li>
-                          <a href="/">Folding Chairs</a>
+                          <Link to="/">Folding Chairs</Link>
                         </li>
                         <li>
-                          <a href="/">Iconic Chairs</a>
+                          <Link to="/">Iconic Chairs</Link>
                         </li>
                         <li>
-                          <a href="/">Cafe Chairs</a>
+                          <Link to="/">Cafe Chairs</Link>
                         </li>
                         <li>
-                          <a href="/">Dining Chairs </a>
+                          <Link to="/">Dining Chairs </Link>
                         </li>
                         <li>
-                          <a href="/">Office Chairs</a>
+                          <Link to="/">Office Chairs</Link>
                         </li>
                       </ul>
                     </div>
@@ -322,38 +321,38 @@ export const Header = () => {
                 </div>
               </li>
               <li>
-                <a href="/products/seettes">Sofas & Recliners</a>
+                <Link to="/products/seettes">Sofas & Recliners</Link>
                 <div className="mega-box">
                   <div className="content">
                     <div className="rowone">
                       <header>By Size</header>
                       <ul className="mega-links a">
                         <li>
-                          <a href="/">3 Seater Sofas</a>
+                          <Link to="/">3 Seater Sofas</Link>
                         </li>
                         <li>
-                          <a href="/">2 Seater sofas</a>
+                          <Link to="/">2 Seater sofas</Link>
                         </li>
                         <li>
-                          <a href="/">1 Seater Sofas</a>
+                          <Link to="/">1 Seater Sofas</Link>
                         </li>
                         <li>
-                          <a href="/">Sectional Sofas</a>
+                          <Link to="/">Sectional Sofas</Link>
                         </li>
                         <li>
-                          <a href="/">Sofa Sets</a>
+                          <Link to="/">Sofa Sets</Link>
                         </li>
                         <li>
-                          <a href="/">1 Seater Recliners</a>
+                          <Link to="/">1 Seater Recliners</Link>
                         </li>
                         <li>
-                          <a href="/">2 Seater Recliners </a>
+                          <Link to="/">2 Seater Recliners </Link>
                         </li>
                         <li>
-                          <a href="/">3 Seater Recliners</a>
+                          <Link to="/">3 Seater Recliners</Link>
                         </li>
                         <li>
-                          <a href="/">Recliner Sets </a>
+                          <Link to="/">Recliner Sets </Link>
                         </li>
                       </ul>
                     </div>
@@ -361,22 +360,22 @@ export const Header = () => {
                       <header>By Type</header>
                       <ul className="mega-links b">
                         <li>
-                          <a href="/">Corner Sofas</a>
+                          <Link to="/">Corner Sofas</Link>
                         </li>
                         <li>
-                          <a href="/">Modular Sofas</a>
+                          <Link to="/">Modular Sofas</Link>
                         </li>
                         <li>
-                          <a href="/">Sofa cum Beds</a>
+                          <Link to="/">Sofa cum Beds</Link>
                         </li>
                         <li>
-                          <a href="/">Futons</a>
+                          <Link to="/">Futons</Link>
                         </li>
                         <li>
-                          <a href="/">Chaise Loungers</a>
+                          <Link to="/">Chaise Loungers</Link>
                         </li>
                         <li>
-                          <a href="/">Recliners</a>
+                          <Link to="/">Recliners</Link>
                         </li>
                       </ul>
                     </div>
@@ -385,16 +384,16 @@ export const Header = () => {
                       <header>Sofa Chairs</header>
                       <ul className="mega-links c">
                         <li>
-                          <a href="/">Lounge Chairs</a>
+                          <Link to="/">Lounge Chairs</Link>
                         </li>
                         <li>
-                          <a href="/">Wing Chairs</a>
+                          <Link to="/">Wing Chairs</Link>
                         </li>
                         <li>
-                          <a href="/">Barrel Chairs</a>
+                          <Link to="/">Barrel Chairs</Link>
                         </li>
                         <li>
-                          <a href="/">Slipper Chairs</a>
+                          <Link to="/">Slipper Chairs</Link>
                         </li>
                       </ul>
                     </div>
@@ -410,35 +409,35 @@ export const Header = () => {
                 </div>
               </li>
               <li>
-                <a href="/"> Cabinetry</a>
+                <Link to="/"> Cabinetry</Link>
                 <div className="mega-box">
                   <div className="content">
                     <div className="rowone">
                       <header>Wardrobes</header>
                       <ul className="mega-links a">
                         <li>
-                          <a href="/">1 Door Wardrobes</a>
+                          <Link to="/">1 Door Wardrobes</Link>
                         </li>
                         <li>
-                          <a href="/">2 Door Wardrobes</a>
+                          <Link to="/">2 Door Wardrobes</Link>
                         </li>
                         <li>
-                          <a href="/">3 Door Wardrobes</a>
+                          <Link to="/">3 Door Wardrobes</Link>
                         </li>
                         <li>
-                          <a href="/">4 Door Wardrobes</a>
+                          <Link to="/">4 Door Wardrobes</Link>
                         </li>
                         <li>
-                          <a href="/">Fabric </a>
+                          <Link to="/">Fabric </Link>
                         </li>
                         <li>
-                          <a href="/">Futons</a>
+                          <Link to="/">Futons</Link>
                         </li>
                         <li>
-                          <a href="/">Kids Wardrobes </a>
+                          <Link to="/">Kids Wardrobes </Link>
                         </li>
                         <li>
-                          <a href="/">Fabric Wardrobes</a>
+                          <Link to="/">Fabric Wardrobes</Link>
                         </li>
                       </ul>
                     </div>
@@ -446,22 +445,22 @@ export const Header = () => {
                       <header>Storage</header>
                       <ul className="mega-links b">
                         <li>
-                          <a href="/">Book Shelves</a>
+                          <Link to="/">Book Shelves</Link>
                         </li>
                         <li>
-                          <a href="/">Book Cases</a>
+                          <Link to="/">Book Cases</Link>
                         </li>
                         <li>
-                          <a href="/">Chest of Drawers</a>
+                          <Link to="/">Chest of Drawers</Link>
                         </li>
                         <li>
-                          <a href="/">Trunks</a>
+                          <Link to="/">Trunks</Link>
                         </li>
                         <li>
-                          <a href="/">Plastic Cabinets</a>
+                          <Link to="/">Plastic Cabinets</Link>
                         </li>
                         <li>
-                          <a href="/">Office Cabinets</a>
+                          <Link to="/">Office Cabinets</Link>
                         </li>
                       </ul>
                     </div>
@@ -470,19 +469,19 @@ export const Header = () => {
                       <header>Kids Storage</header>
                       <ul className="mega-links c">
                         <li>
-                          <a href="/">Book Shelves</a>
+                          <Link to="/">Book Shelves</Link>
                         </li>
                         <li>
-                          <a href="/">Book Cases</a>
+                          <Link to="/">Book Cases</Link>
                         </li>
                         <li>
-                          <a href="/">Drawers</a>
+                          <Link to="/">Drawers</Link>
                         </li>
                         <li>
-                          <a href="/"> Baskets</a>
+                          <Link to="/"> Baskets</Link>
                         </li>
                         <li>
-                          <a href="/">Boxes </a>
+                          <Link to="/">Boxes </Link>
                         </li>
                       </ul>
                     </div>
@@ -498,38 +497,38 @@ export const Header = () => {
                 </div>
               </li>
               <li>
-                <a href="/">Beds</a>
+                <Link to="/">Beds</Link>
                 <div className="mega-box">
                   <div className="content">
                     <div className="rowone">
                       <header>Kids & Teens</header>
                       <ul className="mega-links a">
                         <li>
-                          <a href="/">Cribs</a>
+                          <Link to="/">Cribs</Link>
                         </li>
                         <li>
-                          <a href="/">Single Beds</a>
+                          <Link to="/">Single Beds</Link>
                         </li>
                         <li>
-                          <a href="/">Double Beds</a>
+                          <Link to="/">Double Beds</Link>
                         </li>
                         <li>
-                          <a href="/">Trundle Beds</a>
+                          <Link to="/">Trundle Beds</Link>
                         </li>
                         <li>
-                          <a href="/">Bookcase Beds</a>
+                          <Link to="/">Bookcase Beds</Link>
                         </li>
                         <li>
-                          <a href="/">Novelty Beds</a>
+                          <Link to="/">Novelty Beds</Link>
                         </li>
                         <li>
-                          <a href="/">Tent Beds</a>
+                          <Link to="/">Tent Beds</Link>
                         </li>
                         <li>
-                          <a href="/">Bed Units</a>
+                          <Link to="/">Bed Units</Link>
                         </li>
                         <li>
-                          <a href="/">Bunk Beds</a>
+                          <Link to="/">Bunk Beds</Link>
                         </li>
                       </ul>
                     </div>
@@ -538,19 +537,19 @@ export const Header = () => {
                       <header>Mattresses</header>
                       <ul className="mega-links b">
                         <li>
-                          <a href="/">Single Bed Mattress</a>
+                          <Link to="/">Single Bed Mattress</Link>
                         </li>
                         <li>
-                          <a href="/"> Queen Bed Mattress</a>
+                          <Link to="/"> Queen Bed Mattress</Link>
                         </li>
                         <li>
-                          <a href="/"> King Bed Mattress</a>
+                          <Link to="/"> King Bed Mattress</Link>
                         </li>
                         <li>
-                          <a href="/"> Baby Mattress</a>
+                          <Link to="/"> Baby Mattress</Link>
                         </li>
                         <li>
-                          <a href="/"> Kids Mattress </a>
+                          <Link to="/"> Kids Mattress </Link>
                         </li>
                       </ul>
                     </div>
@@ -558,34 +557,34 @@ export const Header = () => {
                       <header>By Style</header>
                       <ul className="mega-links c">
                         <li>
-                          <a href="/">Modern </a>
+                          <Link to="/">Modern </Link>
                         </li>
                         <li>
-                          <a href="/">Mid-Century</a>
+                          <Link to="/">Mid-Century</Link>
                         </li>
                         <li>
-                          <a href="/"> Contemporary </a>
+                          <Link to="/"> Contemporary </Link>
                         </li>
                         <li>
-                          <a href="/"> Transitional</a>
+                          <Link to="/"> Transitional</Link>
                         </li>
                         <li>
-                          <a href="/">Mission</a>
+                          <Link to="/">Mission</Link>
                         </li>
                         <li>
-                          <a href="/">Industrial </a>
+                          <Link to="/">Industrial </Link>
                         </li>
                         <li>
-                          <a href="/">Platform </a>
+                          <Link to="/">Platform </Link>
                         </li>
                         <li>
-                          <a href="/">Poster Beds </a>
+                          <Link to="/">Poster Beds </Link>
                         </li>
                         <li>
-                          <a href="/">Industrial </a>
+                          <Link to="/">Industrial </Link>
                         </li>
                         <li>
-                          <a href="/">Folding Beds </a>
+                          <Link to="/">Folding Beds </Link>
                         </li>
                       </ul>
                     </div>
@@ -600,38 +599,38 @@ export const Header = () => {
                 </div>
               </li>
               <li>
-                <a href="/">Mattresses</a>
+                <Link to="/">Mattresses</Link>
                 <div className="mega-box">
                   <div className="content">
                     <div className="rowone">
                       <header>Mattresses</header>
                       <ul className="mega-links a">
                         <li>
-                          <a href="/"> Mattress Sizes</a>
+                          <Link to="/"> Mattress Sizes</Link>
                         </li>
                         <li>
-                          <a href="/">Foldable Mattress</a>
+                          <Link to="/">Foldable Mattress</Link>
                         </li>
                         <li>
-                          <a href="/"> Baby Mattress</a>
+                          <Link to="/"> Baby Mattress</Link>
                         </li>
                         <li>
-                          <a href="/">Kids Mattress</a>
+                          <Link to="/">Kids Mattress</Link>
                         </li>
                         <li>
-                          <a href="/">Mattress Protectors</a>
+                          <Link to="/">Mattress Protectors</Link>
                         </li>
                         <li>
-                          <a href="/">Mattress Toppers</a>
+                          <Link to="/">Mattress Toppers</Link>
                         </li>
                         <li>
-                          <a href="/">Pillows</a>
+                          <Link to="/">Pillows</Link>
                         </li>
                         <li>
-                          <a href="/">Bed Wedges </a>
+                          <Link to="/">Bed Wedges </Link>
                         </li>
                         <li>
-                          <a href="/">Mattress Steaming </a>
+                          <Link to="/">Mattress Steaming </Link>
                         </li>
                       </ul>
                     </div>
@@ -640,34 +639,34 @@ export const Header = () => {
                       <header>Mattress Type</header>
                       <ul className="mega-links a">
                         <li>
-                          <a href="/">Coir</a>
+                          <Link to="/">Coir</Link>
                         </li>
                         <li>
-                          <a href="/">Foam </a>
+                          <Link to="/">Foam </Link>
                         </li>
                         <li>
-                          <a href="/">Memory Foam </a>
+                          <Link to="/">Memory Foam </Link>
                         </li>
                         <li>
-                          <a href="/">Bonnell Spring</a>
+                          <Link to="/">Bonnell Spring</Link>
                         </li>
                         <li>
-                          <a href="/">Pocket Spring </a>
+                          <Link to="/">Pocket Spring </Link>
                         </li>
                         <li>
-                          <a href="/"> Latex </a>
+                          <Link to="/"> Latex </Link>
                         </li>
                         <li>
-                          <a href="/">Coir & Foam </a>
+                          <Link to="/">Coir & Foam </Link>
                         </li>
                         <li>
-                          <a href="/"> HR Foam </a>
+                          <Link to="/"> HR Foam </Link>
                         </li>
                         <li>
-                          <a href="/"> Cool Gel Foam </a>
+                          <Link to="/"> Cool Gel Foam </Link>
                         </li>
                         <li>
-                          <a href="/"> Rebonded Foam </a>
+                          <Link to="/"> Rebonded Foam </Link>
                         </li>
                       </ul>
                     </div>
@@ -675,34 +674,34 @@ export const Header = () => {
                       <header>Mattress Brands</header>
                       <ul className="mega-links b">
                         <li>
-                          <a href="/">Clouddio </a>
+                          <Link to="/">Clouddio </Link>
                         </li>
                         <li>
-                          <a href="/">Sleepyhead</a>
+                          <Link to="/">Sleepyhead</Link>
                         </li>
                         <li>
-                          <a href="/">Wake-fit </a>
+                          <Link to="/">Wake-fit </Link>
                         </li>
                         <li>
-                          <a href="/">springtek</a>
+                          <Link to="/">springtek</Link>
                         </li>
                         <li>
-                          <a href="/">Duroflex</a>
+                          <Link to="/">Duroflex</Link>
                         </li>
                         <li>
-                          <a href="/">Durfi </a>
+                          <Link to="/">Durfi </Link>
                         </li>
                         <li>
-                          <a href="/"> Comforto</a>
+                          <Link to="/"> Comforto</Link>
                         </li>
                         <li>
-                          <a href="/">SleepSpa </a>
+                          <Link to="/">SleepSpa </Link>
                         </li>
                         <li>
-                          <a href="/"> Kurl-on</a>
+                          <Link to="/"> Kurl-on</Link>
                         </li>
                         <li>
-                          <a href="/"> SleepX </a>
+                          <Link to="/"> SleepX </Link>
                         </li>
                       </ul>
                     </div>
@@ -717,38 +716,38 @@ export const Header = () => {
                 </div>
               </li>
               <li>
-                <a href="/"> Furnishings</a>
+                <Link to="/"> Furnishings</Link>
                 <div className="mega-box">
                   <div className="content">
                     <div className="rowone">
                       <header>Bed Linen</header>
                       <ul className="mega-links c">
                         <li>
-                          <a href="/"> Bed Sheets </a>
+                          <Link to="/"> Bed Sheets </Link>
                         </li>
                         <li>
-                          <a href="/"> Bedding Sets</a>
+                          <Link to="/"> Bedding Sets</Link>
                         </li>
                         <li>
-                          <a href="/"> Pillows </a>
+                          <Link to="/"> Pillows </Link>
                         </li>
                         <li>
-                          <a href="/"> Pillow Covers</a>
+                          <Link to="/"> Pillow Covers</Link>
                         </li>
                         <li>
-                          <a href="/"> Bed Covers</a>
+                          <Link to="/"> Bed Covers</Link>
                         </li>
                         <li>
-                          <a href="/"> Diwan Sets</a>
+                          <Link to="/"> Diwan Sets</Link>
                         </li>
                         <li>
-                          <a href="/"> Toppers</a>
+                          <Link to="/"> Toppers</Link>
                         </li>
                         <li>
-                          <a href="/"> Protectors </a>
+                          <Link to="/"> Protectors </Link>
                         </li>
                         <li>
-                          <a href="/"> </a>
+                          <Link to="/"> </Link>
                         </li>
                       </ul>
                     </div>
@@ -757,22 +756,22 @@ export const Header = () => {
                       <header>Curtains </header>
                       <ul className="mega-links a">
                         <li>
-                          <a href="/">Door Curtains</a>
+                          <Link to="/">Door Curtains</Link>
                         </li>
                         <li>
-                          <a href="/">Window Curtains </a>
+                          <Link to="/">Window Curtains </Link>
                         </li>
                         <li>
-                          <a href="/">Blinds & Shades </a>
+                          <Link to="/">Blinds & Shades </Link>
                         </li>
                         <li>
-                          <a href="/">Macrame Curtains</a>
+                          <Link to="/">Macrame Curtains</Link>
                         </li>
                         <li>
-                          <a href="/">Curtain Rods </a>
+                          <Link to="/">Curtain Rods </Link>
                         </li>
                         <li>
-                          <a href="/"> Tie Backs </a>
+                          <Link to="/"> Tie Backs </Link>
                         </li>
                       </ul>
                     </div>
@@ -780,28 +779,28 @@ export const Header = () => {
                       <header> Cushion & Covers</header>
                       <ul className="mega-links c">
                         <li>
-                          <a href="/"> Decorative Cushions </a>
+                          <Link to="/"> Decorative Cushions </Link>
                         </li>
                         <li>
-                          <a href="/">Floor Cushions</a>
+                          <Link to="/">Floor Cushions</Link>
                         </li>
                         <li>
-                          <a href="/">Cushion Covers </a>
+                          <Link to="/">Cushion Covers </Link>
                         </li>
                         <li>
-                          <a href="/">Sofa Covers</a>
+                          <Link to="/">Sofa Covers</Link>
                         </li>
                         <li>
-                          <a href="/">Sofa Throws</a>
+                          <Link to="/">Sofa Throws</Link>
                         </li>
                         <li>
-                          <a href="/">Chair Pads </a>
+                          <Link to="/">Chair Pads </Link>
                         </li>
                         <li>
-                          <a href="/"> Chair Covers</a>
+                          <Link to="/"> Chair Covers</Link>
                         </li>
                         <li>
-                          <a href="/"> Cushion Inserts </a>
+                          <Link to="/"> Cushion Inserts </Link>
                         </li>
                       </ul>
                     </div>
@@ -816,38 +815,38 @@ export const Header = () => {
                 </div>
               </li>
               <li>
-                <a href="/">Decor</a>
+                <Link to="/">Decor</Link>
                 <div className="mega-box">
                   <div className="content">
                     <div className="rowone">
                       <header>Wall Art</header>
                       <ul className="mega-links b">
                         <li>
-                          <a href="/">Metal Wall Art</a>
+                          <Link to="/">Metal Wall Art</Link>
                         </li>
                         <li>
-                          <a href="/">Wooden Wall Art</a>
+                          <Link to="/">Wooden Wall Art</Link>
                         </li>
                         <li>
-                          <a href="/">Paintings</a>
+                          <Link to="/">Paintings</Link>
                         </li>
                         <li>
-                          <a href="/">Art Panels </a>
+                          <Link to="/">Art Panels </Link>
                         </li>
                         <li>
-                          <a href="/"> Art Prints</a>
+                          <Link to="/"> Art Prints</Link>
                         </li>
                         <li>
-                          <a href="/"> Ethnic Art</a>
+                          <Link to="/"> Ethnic Art</Link>
                         </li>
                         <li>
-                          <a href="/">Wall Masks </a>
+                          <Link to="/">Wall Masks </Link>
                         </li>
                         <li>
-                          <a href="/"> Faux Animal Busts</a>
+                          <Link to="/"> Faux Animal Busts</Link>
                         </li>
                         <li>
-                          <a href="/">Wall Plates </a>
+                          <Link to="/">Wall Plates </Link>
                         </li>
                       </ul>
                     </div>
@@ -856,34 +855,34 @@ export const Header = () => {
                       <header>Spiritual</header>
                       <ul className="mega-links b">
                         <li>
-                          <a href="/"> Mandirs </a>
+                          <Link to="/"> Mandirs </Link>
                         </li>
                         <li>
-                          <a href="/"> Pooja Shelves </a>
+                          <Link to="/"> Pooja Shelves </Link>
                         </li>
                         <li>
-                          <a href="/"> Religious Idols </a>
+                          <Link to="/"> Religious Idols </Link>
                         </li>
                         <li>
-                          <a href="/"> Religious Frames </a>
+                          <Link to="/"> Religious Frames </Link>
                         </li>
                         <li>
-                          <a href="/"> Chowkies </a>
+                          <Link to="/"> Chowkies </Link>
                         </li>
                         <li>
-                          <a href="/">Feng Shui </a>
+                          <Link to="/">Feng Shui </Link>
                         </li>
                         <li>
-                          <a href="/"> Pooja Essentials </a>
+                          <Link to="/"> Pooja Essentials </Link>
                         </li>
                         <li>
-                          <a href="/"> Festive Decor </a>
+                          <Link to="/"> Festive Decor </Link>
                         </li>
                         <li>
-                          <a href="/">Prayer Mats </a>
+                          <Link to="/">Prayer Mats </Link>
                         </li>
                         <li>
-                          <a href="/"> Spiritual Coins </a>
+                          <Link to="/"> Spiritual Coins </Link>
                         </li>
                       </ul>
                     </div>
@@ -891,34 +890,34 @@ export const Header = () => {
                       <header>Home Garden</header>
                       <ul className="mega-links a">
                         <li>
-                          <a href="/">Pots & Planters </a>
+                          <Link to="/">Pots & Planters </Link>
                         </li>
                         <li>
-                          <a href="/"> Planter Stands</a>
+                          <Link to="/"> Planter Stands</Link>
                         </li>
                         <li>
-                          <a href="/">Natural Plants </a>
+                          <Link to="/">Natural Plants </Link>
                         </li>
                         <li>
-                          <a href="/"> Artificial Plants</a>
+                          <Link to="/"> Artificial Plants</Link>
                         </li>
                         <li>
-                          <a href="/">Artificial Flowers</a>
+                          <Link to="/">Artificial Flowers</Link>
                         </li>
                         <li>
-                          <a href="/"> Artificial Grass </a>
+                          <Link to="/"> Artificial Grass </Link>
                         </li>
                         <li>
-                          <a href="/">Decorative Pebbles </a>
+                          <Link to="/">Decorative Pebbles </Link>
                         </li>
                         <li>
-                          <a href="/"> Garden Figurines </a>
+                          <Link to="/"> Garden Figurines </Link>
                         </li>
                         <li>
-                          <a href="/"> Bird Houses</a>
+                          <Link to="/"> Bird Houses</Link>
                         </li>
                         <li>
-                          <a href="/"> Gardening Tools</a>
+                          <Link to="/"> Gardening Tools</Link>
                         </li>
                       </ul>
                     </div>
@@ -933,23 +932,23 @@ export const Header = () => {
                 </div>
               </li>
               <li>
-                <a href="/"> Lighting</a>
+                <Link to="/"> Lighting</Link>
                 <div className="mega-box">
                   <div className="content">
                     <div className="rowone">
                       <header>Wall Lights</header>
                       <ul className="mega-links b">
                         <li>
-                          <a href="/">Wall Sconces</a>
+                          <Link to="/">Wall Sconces</Link>
                         </li>
                         <li>
-                          <a href="/">Wall Lanterns</a>
+                          <Link to="/">Wall Lanterns</Link>
                         </li>
                         <li>
-                          <a href="/">Picture Lights</a>
+                          <Link to="/">Picture Lights</Link>
                         </li>
                         <li>
-                          <a href="/">Bath Lights</a>
+                          <Link to="/">Bath Lights</Link>
                         </li>
                       </ul>
                     </div>
@@ -958,16 +957,16 @@ export const Header = () => {
                       <header>LED Lights</header>
                       <ul className="mega-links b">
                         <li>
-                          <a href="/"> Lamps </a>
+                          <Link to="/"> Lamps </Link>
                         </li>
                         <li>
-                          <a href="/"> Ceiling Lights </a>
+                          <Link to="/"> Ceiling Lights </Link>
                         </li>
                         <li>
-                          <a href="/"> Wall Lights </a>
+                          <Link to="/"> Wall Lights </Link>
                         </li>
                         <li>
-                          <a href="/"> Bulbs and Batten </a>
+                          <Link to="/"> Bulbs and Batten </Link>
                         </li>
                       </ul>
                     </div>
@@ -975,16 +974,16 @@ export const Header = () => {
                       <header>Table Lamps</header>
                       <ul className="mega-links a">
                         <li>
-                          <a href="/">Table Lamps </a>
+                          <Link to="/">Table Lamps </Link>
                         </li>
                         <li>
-                          <a href="/">Study Lamps</a>
+                          <Link to="/">Study Lamps</Link>
                         </li>
                         <li>
-                          <a href="/">Table Lanterns </a>
+                          <Link to="/">Table Lanterns </Link>
                         </li>
                         <li>
-                          <a href="/"> Filament Bulbs</a>
+                          <Link to="/"> Filament Bulbs</Link>
                         </li>
                       </ul>
                     </div>
@@ -999,26 +998,26 @@ export const Header = () => {
                 </div>
               </li>
               <li>
-                <a href="/">Appliances</a>
+                <Link to="/">Appliances</Link>
                 <div className="mega-box">
                   <div className="content">
                     <div className="rowone">
                       <header>Heating & Cooling</header>
                       <ul className="mega-links a">
                         <li>
-                          <a href="/">Air Conditioners</a>
+                          <Link to="/">Air Conditioners</Link>
                         </li>
                         <li>
-                          <a href="/">Air Coolers</a>
+                          <Link to="/">Air Coolers</Link>
                         </li>
                         <li>
-                          <a href="/">Fans</a>
+                          <Link to="/">Fans</Link>
                         </li>
                         <li>
-                          <a href="/">Water Geysers </a>
+                          <Link to="/">Water Geysers </Link>
                         </li>
                         <li>
-                          <a href="/"> Room Heaters</a>
+                          <Link to="/"> Room Heaters</Link>
                         </li>
                       </ul>
                     </div>
@@ -1027,16 +1026,16 @@ export const Header = () => {
                       <header>Chimneys</header>
                       <ul className="mega-links b">
                         <li>
-                          <a href="/"> Wall-Mounted </a>
+                          <Link to="/"> Wall-Mounted </Link>
                         </li>
                         <li>
-                          <a href="/"> Island Chimneys </a>
+                          <Link to="/"> Island Chimneys </Link>
                         </li>
                         <li>
-                          <a href="/"> Designer Chimneys </a>
+                          <Link to="/"> Designer Chimneys </Link>
                         </li>
                         <li>
-                          <a href="/"> Straight Line </a>
+                          <Link to="/"> Straight Line </Link>
                         </li>
                       </ul>
                     </div>
@@ -1044,13 +1043,13 @@ export const Header = () => {
                       <header>OTGs</header>
                       <ul className="mega-links b">
                         <li>
-                          <a href="/">Microwaves </a>
+                          <Link to="/">Microwaves </Link>
                         </li>
                         <li>
-                          <a href="/">Ovens & OTGs</a>
+                          <Link to="/">Ovens & OTGs</Link>
                         </li>
                         <li>
-                          <a href="/">Fryers </a>
+                          <Link to="/">Fryers </Link>
                         </li>
                       </ul>
                     </div>
@@ -1065,26 +1064,26 @@ export const Header = () => {
                 </div>
               </li>
               <li>
-                <a href="/"> Modular</a>
+                <Link to="/"> Modular</Link>
                 <div className="mega-box">
                   <div className="content">
                     <div className="rowone">
                       <header>Modular Kitchens</header>
                       <ul className="mega-links a">
                         <li>
-                          <a href="/">Straight Kitchen </a>
+                          <Link to="/">Straight Kitchen </Link>
                         </li>
                         <li>
-                          <a href="/">L Shaped Kitchen </a>
+                          <Link to="/">L Shaped Kitchen </Link>
                         </li>
                         <li>
-                          <a href="/">Parallel Kitchen</a>
+                          <Link to="/">Parallel Kitchen</Link>
                         </li>
                         <li>
-                          <a href="/"> U Shaped Kitchen </a>
+                          <Link to="/"> U Shaped Kitchen </Link>
                         </li>
                         <li>
-                          <a href="/">Island Kitchen </a>
+                          <Link to="/">Island Kitchen </Link>
                         </li>
                       </ul>
                     </div>
@@ -1093,7 +1092,7 @@ export const Header = () => {
                       <header>Modular Wardrobes</header>
                       <ul className="mega-links b">
                         <li>
-                          <a href="/"> Hinged Wardrobes </a>
+                          <Link to="/"> Hinged Wardrobes </Link>
                         </li>
                       </ul>
                     </div>

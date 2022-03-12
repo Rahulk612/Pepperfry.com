@@ -11,6 +11,9 @@ import {
   GetData,
   ADD_TO_CART,
   DEL_FROM_CART,
+  Get_Data_Loading,
+  Get_Data_Success,
+  Empty_Store,
 } from "./actionTypes";
 import axios from "axios";
 
@@ -87,13 +90,38 @@ export const delFromCart = (payload) => {
 }
 
 
+export const get_Data_Loading  = (payload) => {
+  return {
+    type: Get_Data_Loading,
+    payload
+  };
+}
+
+
+
+export const get_Data_Success = (payload) => {
+  return {
+    type: Get_Data_Success,
+  };
+}
+
+
+export const empty_Store = () => {
+  return {
+    type: Empty_Store,
+  };
+};
+
+
 export const getProducts = (query) => (dispatch) => {
+  get_Data_Loading(true)
   axios
-    .get(`https://backend-pepperfry.herokuapp.com/Pepperfry/${query || "seettes"}`)
+    .get(`https://backend-pepperfry.herokuapp.com/Pepperfry/${query}`)
     .then(({ data }) => {
+      get_Data_Success()
       dispatch(getDataSuccess(data));
     })
     .catch(() => {
-      // dispath error
+      // get_Data_Loading();
     });
 };

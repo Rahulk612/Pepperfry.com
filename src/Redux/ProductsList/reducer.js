@@ -12,6 +12,9 @@ import {
   GetData,
   ADD_TO_CART,
   DEL_FROM_CART,
+  Get_Data_Loading,
+  Get_Data_Success,
+  Empty_Store,
 } from "./actionTypes";
 
 const init = {
@@ -25,8 +28,20 @@ const init = {
 
 export const ProductReducer = (store = init,{type,payload}) => {
     switch (type) {
+      case Get_Data_Success:
+        return { ...store, loading: false };
+      case Get_Data_Loading:
+        return { ...store, loading: true };
       case GetData:
-        return { ...store, loading: false, data: payload, main: payload,brands:BrandsFn(payload) };
+        return {
+          ...store,
+          loading: false,
+          data: payload,
+          main: payload,
+          brands: BrandsFn(payload),
+        };
+      case Empty_Store:
+        return { ...store, data:[],loading:true };
       case Higher_Price:
         return {
           ...store,
@@ -71,14 +86,14 @@ export const ProductReducer = (store = init,{type,payload}) => {
         return {
           ...store,
           loading: false,
-          cartItems: [ ...store.cartItems, CheckExist(store.cartItems,payload) ],
-          staticCart:payload
+          cartItems: [...store.cartItems, CheckExist(store.cartItems, payload)],
+          staticCart: payload,
         };
       case DEL_FROM_CART:
         return {
           ...store,
           loading: false,
-          cartItems: DeletFromCart(store.cartItems,payload)
+          cartItems: DeletFromCart(store.cartItems, payload),
         };
       default:
         return { ...store };

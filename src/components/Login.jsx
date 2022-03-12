@@ -3,7 +3,6 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import axios from "axios"
 import { useState,useEffect } from "react";
-import { Link } from "react-router-dom";
 
 export const Login = () => {
 

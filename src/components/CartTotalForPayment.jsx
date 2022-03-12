@@ -1,4 +1,3 @@
-import { Checkbox } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 export const Carttotal = ({ data }) => {

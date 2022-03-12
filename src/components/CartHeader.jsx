@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
+
 import {BsCart3} from "react-icons/bs"
-import { useEffect } from "react";
 
 export const CartHeader = ({user}) => {
 

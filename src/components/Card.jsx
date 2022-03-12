@@ -1,10 +1,6 @@
 import styled from "styled-components"
 import { BsHeart, BsStarFill } from "react-icons/bs";
-import { Link} from "react-router-dom";
-import { delFromCart, addToCart } from "../Redux/ProductsList/actions";
-import { useEffect } from "react";
-import { useState } from "react";
-import { useDispatch, useSelector, shallowEqual } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Div = styled.div`
   /* height: 500px; */
@@ -34,7 +30,7 @@ const Button = styled.button`
 
 
 export const Card = ({ item, handleCart }) => {
-
+let navigate = useNavigate();
 
 
   return (
@@ -66,7 +62,7 @@ export const Card = ({ item, handleCart }) => {
             className="itemTitle"
             onClick={() => {
               localStorage.setItem("indProduct", JSON.stringify(item));
-              window.location.href = "/IndividualProduct";
+              navigate("/IndividualProduct");
             }}
           >
             {item.Title}
